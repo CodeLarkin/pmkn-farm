@@ -20,6 +20,29 @@ npm i
 npx hardhat test
 ```
 ***
+
+### Local hardhat testing with browser/frontend
+
+Connect Metamask to http://localhost:8545, chainId 31337.
+
+In one terminal:
+```
+npx hardhat node
+```
+
+In another:
+```
+export MM_TEST_ADDRESS=<your-metamask-address>
+npx hardhat run script scripts/deployFarm.ts --network localhost
+```
+
+In another terminal:
+```
+cd frontend
+npm i && npm run start
+```
+
+
 ## Deployment
 ### Prerequisites
 This dApp accepts DAI as its staking token; therefore, you'll need to acquire Kovan DAI if you deploy to Kovan (as it's preconfigured). To attain kDAI, you'll need to lock kETH in a Maker vault in exchange for kDAI.

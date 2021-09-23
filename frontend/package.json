@@ -12,7 +12,6 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
-
   "homepage": "http://andrew-fleming.github.io/pmkn-farm",
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +21,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
